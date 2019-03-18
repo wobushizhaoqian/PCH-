@@ -15,6 +15,13 @@
 		8748F458223B3B3A00775F93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F457223B3B3A00775F93 /* main.m */; };
 		8748F462223B3B3A00775F93 /* PCHTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F461223B3B3A00775F93 /* PCHTestTests.m */; };
 		8748F46D223B3B3A00775F93 /* PCHTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F46C223B3B3A00775F93 /* PCHTestUITests.m */; };
+		8748F47E223B419300775F93 /* NSString+hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F47D223B419300775F93 /* NSString+hello.m */; };
+		8748F481223B44D000775F93 /* HelloView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F480223B44D000775F93 /* HelloView.m */; };
+		87AF132A223BDBA300000211 /* ZQTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AF1329223BDBA300000211 /* ZQTableView.m */; };
+		87AF132D223BE07400000211 /* BaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AF132C223BE07400000211 /* BaseCellModel.m */; };
+		87BF508D223B9135008D5B4B /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BF508C223B9135008D5B4B /* MVCView.m */; };
+		87BF5090223B917C008D5B4B /* MVCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BF508F223B917C008D5B4B /* MVCModel.m */; };
+		87BF5093223B91A5008D5B4B /* MVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BF5092223B91A5008D5B4B /* MVCViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,21 @@
 		8748F468223B3B3A00775F93 /* PCHTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PCHTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8748F46C223B3B3A00775F93 /* PCHTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCHTestUITests.m; sourceTree = "<group>"; };
 		8748F46E223B3B3A00775F93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8748F47A223B3BA800775F93 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		8748F47C223B419300775F93 /* NSString+hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+hello.h"; sourceTree = "<group>"; };
+		8748F47D223B419300775F93 /* NSString+hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+hello.m"; sourceTree = "<group>"; };
+		8748F47F223B44D000775F93 /* HelloView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloView.h; sourceTree = "<group>"; };
+		8748F480223B44D000775F93 /* HelloView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloView.m; sourceTree = "<group>"; };
+		87AF1328223BDBA300000211 /* ZQTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTableView.h; sourceTree = "<group>"; };
+		87AF1329223BDBA300000211 /* ZQTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTableView.m; sourceTree = "<group>"; };
+		87AF132B223BE07400000211 /* BaseCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCellModel.h; sourceTree = "<group>"; };
+		87AF132C223BE07400000211 /* BaseCellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseCellModel.m; sourceTree = "<group>"; };
+		87BF508B223B9135008D5B4B /* MVCView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCView.h; sourceTree = "<group>"; };
+		87BF508C223B9135008D5B4B /* MVCView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCView.m; sourceTree = "<group>"; };
+		87BF508E223B917C008D5B4B /* MVCModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCModel.h; sourceTree = "<group>"; };
+		87BF508F223B917C008D5B4B /* MVCModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCModel.m; sourceTree = "<group>"; };
+		87BF5091223B91A5008D5B4B /* MVCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVCViewController.h; sourceTree = "<group>"; };
+		87BF5092223B91A5008D5B4B /* MVCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVCViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +123,17 @@
 		8748F447223B3B3800775F93 /* PCHTest */ = {
 			isa = PBXGroup;
 			children = (
+				87AF1327223BDB6100000211 /* ZQTabView */,
+				87BF508A223B90E3008D5B4B /* MVC_Demo */,
 				8748F448223B3B3800775F93 /* AppDelegate.h */,
 				8748F449223B3B3800775F93 /* AppDelegate.m */,
 				8748F44B223B3B3800775F93 /* ViewController.h */,
 				8748F44C223B3B3800775F93 /* ViewController.m */,
+				8748F47F223B44D000775F93 /* HelloView.h */,
+				8748F480223B44D000775F93 /* HelloView.m */,
+				8748F47C223B419300775F93 /* NSString+hello.h */,
+				8748F47D223B419300775F93 /* NSString+hello.m */,
+				8748F47A223B3BA800775F93 /* PrefixHeader.pch */,
 				8748F44E223B3B3800775F93 /* Main.storyboard */,
 				8748F451223B3B3A00775F93 /* Assets.xcassets */,
 				8748F453223B3B3A00775F93 /* LaunchScreen.storyboard */,
@@ -130,6 +159,30 @@
 				8748F46E223B3B3A00775F93 /* Info.plist */,
 			);
 			path = PCHTestUITests;
+			sourceTree = "<group>";
+		};
+		87AF1327223BDB6100000211 /* ZQTabView */ = {
+			isa = PBXGroup;
+			children = (
+				87AF1328223BDBA300000211 /* ZQTableView.h */,
+				87AF1329223BDBA300000211 /* ZQTableView.m */,
+				87AF132B223BE07400000211 /* BaseCellModel.h */,
+				87AF132C223BE07400000211 /* BaseCellModel.m */,
+			);
+			path = ZQTabView;
+			sourceTree = "<group>";
+		};
+		87BF508A223B90E3008D5B4B /* MVC_Demo */ = {
+			isa = PBXGroup;
+			children = (
+				87BF508B223B9135008D5B4B /* MVCView.h */,
+				87BF508C223B9135008D5B4B /* MVCView.m */,
+				87BF508E223B917C008D5B4B /* MVCModel.h */,
+				87BF508F223B917C008D5B4B /* MVCModel.m */,
+				87BF5091223B91A5008D5B4B /* MVCViewController.h */,
+				87BF5092223B91A5008D5B4B /* MVCViewController.m */,
+			);
+			path = MVC_Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,8 +315,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87AF132A223BDBA300000211 /* ZQTableView.m in Sources */,
+				8748F481223B44D000775F93 /* HelloView.m in Sources */,
+				87BF508D223B9135008D5B4B /* MVCView.m in Sources */,
 				8748F44D223B3B3800775F93 /* ViewController.m in Sources */,
+				87BF5093223B91A5008D5B4B /* MVCViewController.m in Sources */,
 				8748F458223B3B3A00775F93 /* main.m in Sources */,
+				8748F47E223B419300775F93 /* NSString+hello.m in Sources */,
+				87BF5090223B917C008D5B4B /* MVCModel.m in Sources */,
+				87AF132D223BE07400000211 /* BaseCellModel.m in Sources */,
 				8748F44A223B3B3800775F93 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +496,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X8JL97Z3E;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PCHTest/PrefixHeader.pch";
 				INFOPLIST_FILE = PCHTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -452,6 +515,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7X8JL97Z3E;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PCHTest/PrefixHeader.pch";
 				INFOPLIST_FILE = PCHTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
