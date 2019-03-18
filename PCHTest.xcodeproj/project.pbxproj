@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		872DF036223F94330073EA30 /* WebTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 872DF035223F94330073EA30 /* WebTestViewController.m */; };
+		872DF03A223F96450073EA30 /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 872DF039223F96450073EA30 /* test.html */; };
 		8748F44A223B3B3800775F93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F449223B3B3800775F93 /* AppDelegate.m */; };
 		8748F44D223B3B3800775F93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F44C223B3B3800775F93 /* ViewController.m */; };
 		8748F450223B3B3800775F93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8748F44E223B3B3800775F93 /* Main.storyboard */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		872DF034223F94330073EA30 /* WebTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebTestViewController.h; sourceTree = "<group>"; };
+		872DF035223F94330073EA30 /* WebTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebTestViewController.m; sourceTree = "<group>"; };
+		872DF039223F96450073EA30 /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
 		8748F445223B3B3800775F93 /* PCHTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PCHTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8748F448223B3B3800775F93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8748F449223B3B3800775F93 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +105,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		872DF033223F93F80073EA30 /* WebTest */ = {
+			isa = PBXGroup;
+			children = (
+				872DF034223F94330073EA30 /* WebTestViewController.h */,
+				872DF035223F94330073EA30 /* WebTestViewController.m */,
+			);
+			path = WebTest;
+			sourceTree = "<group>";
+		};
+		872DF037223F94390073EA30 /* ZQRouterManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ZQRouterManager;
+			sourceTree = "<group>";
+		};
+		872DF038223F945F0073EA30 /* HTMLFile */ = {
+			isa = PBXGroup;
+			children = (
+				872DF039223F96450073EA30 /* test.html */,
+			);
+			path = HTMLFile;
+			sourceTree = "<group>";
+		};
 		8748F43C223B3B3800775F93 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +152,9 @@
 		8748F447223B3B3800775F93 /* PCHTest */ = {
 			isa = PBXGroup;
 			children = (
+				872DF038223F945F0073EA30 /* HTMLFile */,
+				872DF037223F94390073EA30 /* ZQRouterManager */,
+				872DF033223F93F80073EA30 /* WebTest */,
 				87AF1327223BDB6100000211 /* ZQTabView */,
 				87BF508A223B90E3008D5B4B /* MVC_Demo */,
 				8748F448223B3B3800775F93 /* AppDelegate.h */,
@@ -288,6 +320,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				872DF03A223F96450073EA30 /* test.html in Resources */,
 				8748F455223B3B3A00775F93 /* LaunchScreen.storyboard in Resources */,
 				8748F452223B3B3A00775F93 /* Assets.xcassets in Resources */,
 				8748F450223B3B3800775F93 /* Main.storyboard in Resources */,
@@ -324,6 +357,7 @@
 				8748F47E223B419300775F93 /* NSString+hello.m in Sources */,
 				87BF5090223B917C008D5B4B /* MVCModel.m in Sources */,
 				87AF132D223BE07400000211 /* BaseCellModel.m in Sources */,
+				872DF036223F94330073EA30 /* WebTestViewController.m in Sources */,
 				8748F44A223B3B3800775F93 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
