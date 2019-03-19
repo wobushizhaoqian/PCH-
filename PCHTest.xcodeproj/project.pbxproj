@@ -19,6 +19,9 @@
 		8748F46D223B3B3A00775F93 /* PCHTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F46C223B3B3A00775F93 /* PCHTestUITests.m */; };
 		8748F47E223B419300775F93 /* NSString+hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F47D223B419300775F93 /* NSString+hello.m */; };
 		8748F481223B44D000775F93 /* HelloView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8748F480223B44D000775F93 /* HelloView.m */; };
+		8769D1E422408B0A0008C36E /* RouterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8769D1E322408B0A0008C36E /* RouterViewController.m */; };
+		8769D1E92240C4DC0008C36E /* ZQprotocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 8769D1E82240C4DC0008C36E /* ZQprotocol.m */; };
+		8769D1EC2240C5640008C36E /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 8769D1EB2240C5640008C36E /* Person.m */; };
 		87AF132A223BDBA300000211 /* ZQTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AF1329223BDBA300000211 /* ZQTableView.m */; };
 		87AF132D223BE07400000211 /* BaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AF132C223BE07400000211 /* BaseCellModel.m */; };
 		87BF508D223B9135008D5B4B /* MVCView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87BF508C223B9135008D5B4B /* MVCView.m */; };
@@ -68,6 +71,12 @@
 		8748F47D223B419300775F93 /* NSString+hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+hello.m"; sourceTree = "<group>"; };
 		8748F47F223B44D000775F93 /* HelloView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloView.h; sourceTree = "<group>"; };
 		8748F480223B44D000775F93 /* HelloView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloView.m; sourceTree = "<group>"; };
+		8769D1E222408B0A0008C36E /* RouterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterViewController.h; sourceTree = "<group>"; };
+		8769D1E322408B0A0008C36E /* RouterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RouterViewController.m; sourceTree = "<group>"; };
+		8769D1E72240C4DC0008C36E /* ZQprotocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQprotocol.h; sourceTree = "<group>"; };
+		8769D1E82240C4DC0008C36E /* ZQprotocol.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQprotocol.m; sourceTree = "<group>"; };
+		8769D1EA2240C5640008C36E /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		8769D1EB2240C5640008C36E /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		87AF1328223BDBA300000211 /* ZQTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZQTableView.h; sourceTree = "<group>"; };
 		87AF1329223BDBA300000211 /* ZQTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZQTableView.m; sourceTree = "<group>"; };
 		87AF132B223BE07400000211 /* BaseCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCellModel.h; sourceTree = "<group>"; };
@@ -117,6 +126,8 @@
 		872DF037223F94390073EA30 /* ZQRouterManager */ = {
 			isa = PBXGroup;
 			children = (
+				8769D1E222408B0A0008C36E /* RouterViewController.h */,
+				8769D1E322408B0A0008C36E /* RouterViewController.m */,
 			);
 			path = ZQRouterManager;
 			sourceTree = "<group>";
@@ -152,6 +163,7 @@
 		8748F447223B3B3800775F93 /* PCHTest */ = {
 			isa = PBXGroup;
 			children = (
+				8769D1E62240BE820008C36E /* ZQBlock */,
 				872DF038223F945F0073EA30 /* HTMLFile */,
 				872DF037223F94390073EA30 /* ZQRouterManager */,
 				872DF033223F93F80073EA30 /* WebTest */,
@@ -191,6 +203,17 @@
 				8748F46E223B3B3A00775F93 /* Info.plist */,
 			);
 			path = PCHTestUITests;
+			sourceTree = "<group>";
+		};
+		8769D1E62240BE820008C36E /* ZQBlock */ = {
+			isa = PBXGroup;
+			children = (
+				8769D1E72240C4DC0008C36E /* ZQprotocol.h */,
+				8769D1E82240C4DC0008C36E /* ZQprotocol.m */,
+				8769D1EA2240C5640008C36E /* Person.h */,
+				8769D1EB2240C5640008C36E /* Person.m */,
+			);
+			path = ZQBlock;
 			sourceTree = "<group>";
 		};
 		87AF1327223BDB6100000211 /* ZQTabView */ = {
@@ -350,12 +373,15 @@
 			files = (
 				87AF132A223BDBA300000211 /* ZQTableView.m in Sources */,
 				8748F481223B44D000775F93 /* HelloView.m in Sources */,
+				8769D1EC2240C5640008C36E /* Person.m in Sources */,
 				87BF508D223B9135008D5B4B /* MVCView.m in Sources */,
 				8748F44D223B3B3800775F93 /* ViewController.m in Sources */,
 				87BF5093223B91A5008D5B4B /* MVCViewController.m in Sources */,
+				8769D1E422408B0A0008C36E /* RouterViewController.m in Sources */,
 				8748F458223B3B3A00775F93 /* main.m in Sources */,
 				8748F47E223B419300775F93 /* NSString+hello.m in Sources */,
 				87BF5090223B917C008D5B4B /* MVCModel.m in Sources */,
+				8769D1E92240C4DC0008C36E /* ZQprotocol.m in Sources */,
 				87AF132D223BE07400000211 /* BaseCellModel.m in Sources */,
 				872DF036223F94330073EA30 /* WebTestViewController.m in Sources */,
 				8748F44A223B3B3800775F93 /* AppDelegate.m in Sources */,
